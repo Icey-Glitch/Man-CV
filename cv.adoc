@@ -1,0 +1,62 @@
+:doctype: book
+:imagesdir: ./images
+:iconsdir: ./icons
+:nofooter:
+
+Julian Alexander:: Tigard OR +
+\Jalex@riseup.net 
+
+
+[#academic-record]
+=== Academic Record
+'''
+[horizontal]
+Primary Education ::
+    Elementary School :::
+    - Participated in First Lego Robotics, State Qualifier, 2 years
+    Middle School:::
+    - Stock Market Game 3rd in state
+
+High School::
+2023-24:: **Mountainside High School** +
+- Java Programming dual credit (PCC)
+- Game Dev Club: Implementing contact api
+- George Fox 24 CS Comp 
+Forcasted ::
+- Systems Design in C++ dual credit (PCC)
+
+[#it-skills]
+=== IT Skills
+'''
+[horizontal]
+Core Skills::
+- System Administration:
+  * MYP project on enterprise networking, with a focus on zero trust architecture. Conducted a mock trial involving a malware sample and user accounts. This was used for a write-up on the procedures to prevent such attacks.
+- Tooling: nix, K8S, Proxmox
+- Software Development:
+  - Programming languages: C#, Lua, Python, C++, C99, Rust
+  * Worked on project to reconstruct IL instructions from il2cpp compiled unity games.
+Operating Systems::
+- Linux:
+  - Rocky Linux, Debian Bullseye, Nix
+- Microsoft Windows:
+  - Windows 7 - 11
+[Specify proficiency level for each OS]
+
+[#language-skills]
+=== Language Skills
+'''
+[horizontal]
+Fluent::
+- English
+Learning::
+- Spanish
+[Add any relevant certifications or tests]
+
+[#personal-interests]
+=== Personal Interests
+'''
+- Rock Climbing
+- Biking
+- Orwell's 1984 and Alien
+[Add any skills or qualities developed through these interests]
