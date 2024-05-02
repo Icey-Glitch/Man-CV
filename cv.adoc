@@ -1,0 +1,77 @@
+:doctype: book
+:imagesdir: ./images
+:iconsdir: ./icons
+:nofooter:
+
+Julian:: OR
+
+[#Resume]
+=== Resume
+
+[#academic-record]
+=== Academic Record
+'''
+[horizontal]
+Primary School ::
+    Elementary School :::
+    - Participated in First Lego Robotics, State Qualifier, 2 years
+    Middle School:::
+    - Stock Market Game 3rd in state
+
+High School::
+2023-24:: **Removed for public** +
+- Java Programming dual credit (PCC)
+- Game Dev Club: Implementing contact api
+- George Fox 24 CS Comp 
+Forcasted ::
+- Systems Design in C++ dual credit (PCC)
+
+[#it-skills]
+=== IT Skills
+'''
+[horizontal]
+Core Skills::
+- System Administration:
+  * MYP project on enterprise networking, with a focus on zero trust architecture. Conducted a mock trial involving a malware sample and user accounts. This was used for a write-up on the procedures to prevent such attacks.
+  * Experince with deploying sites using cloudflare.
+  * daily use of systems as code (nix os), which involves reading lots of documentation, and talking to maintaners.
+- Tooling: nix, K8S, Proxmox
+  * There is still a lot to learn, but I have been working with some of community. This repo contains the config for my thinkpad and my desktop https://github.com/Icey-Glitch/NixDots
+- Software Development:
+  - Programming languages: C#, Lua, Python, C++, C99, Rust, NodeJS
+  * This site!!
+  * Implemented a il2cpp CLR interface (this was replaced as a project called cpp2il). This is a closed source project I contributed to that built hollow il asms into the CLR. This is usefull when you want to interact with such bianarys after the program has been compiled, like in game modding.
+- Networking:
+  * General knowlage of network architecture and debuging.
+  * Home network with Opnsense and Tailscale. Multi V-Lan setup.
+ 
+  * Packet-Tracer practice
+- Security:
+  - Books: The art of memory forensics, Shell coders handbook
+  * Experience with windows in memory malware detection.
+  * Ghydra and IDA experience.
+  * Securing sensitive endpoints with fail2ban and IDS systems (Suricata).
+Operating Systems::
+- Linux:
+  - Rocky Linux, Debian Bullseye, Nix
+- Microsoft Windows:
+  - Windows 7 - 11
+[Specify proficiency level for each OS]
+
+[#language-skills]
+=== Language Skills
+'''
+[horizontal]
+Fluent::
+- English
+Learning::
+- Spanish
+[Add any relevant certifications or tests]
+
+[#personal-interests]
+=== Personal Interests
+'''
+- Rock Climbing
+- Biking
+- Orwell's 1984 and Alien
+[Add any skills or qualities developed through these interests]
