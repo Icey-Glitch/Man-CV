@@ -42,7 +42,6 @@ jobs:
           accountId: 3597eb148572990301de37d103c9b11a
           projectName: coverletter
           directory: ./result
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           wranglerVersion: "3"
           logsOnFailure: false
