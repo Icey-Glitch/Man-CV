@@ -17,10 +17,7 @@ jobs:
         uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Build site
         run: nix build .#pages --print-build-logs
-      - name: Adjust permissions
-        run: |
-          chown -R `id -u`:`id -g` ./result
-          chmod -R a+rwx ./result
+
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
