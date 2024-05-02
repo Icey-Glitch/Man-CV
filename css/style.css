@@ -1,42 +1,59 @@
 body {
   font-family: monospace;
   font-size: 12px;
-  color: #222222;
+  color: #ebdbb2; /* light foreground */
+  background-color: #282828; /* dark background */
   margin: 20px 10px 0px 20px;
   text-align: left;
 }
+
 .manheader {
   font-family: monospace;
   font-size: 12px;
   margin: 10px 0px 0px 0px;
 }
+
 h1 {
   font-size: 12px;
   font-weight: bold;
   margin: 15px 0px 0px 0px;
+  color: #83a598; /* faded blue */
 }
+
 .subtext {
   margin: 0px 0px 10px 50px;
   width: 600px;
+  color: #a89984; /* faded yellow */
 }
+
 .doublesubtext {
   margin: 0px 0px 10px 70px;
   width: 600px;
+  color: #a89984; /* faded yellow */
 }
+
 .triplesubtext {
   margin: 0px 0px 10px 50px;
   width: 800px;
+  color: #a89984; /* faded yellow */
 }
+
 .bottomcut {
   margin-bottom: 0px;
 }
+
 a, a.active, a.visited, a.hover {
-  color: #222222;
-  text-decoration: underline;
+  color: #8ec07c; /* green */
+  text-decoration: none; /* remove underline */
 }
+
+a:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
 .footer {
   margin: 10px 0px 20px 0px;
-  color: #CCCCCC;
+  color: #a89984; /* faded yellow */
 }
 
 .triplesubtext li{
