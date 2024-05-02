@@ -10,7 +10,7 @@ with pkgs;
     ];
 
     buildPhase = ''
-      asciidoctor --attribute reproducible="true" cv.adoc -o index.html
+      asciidoctor --attribute stylesheet=./css/style.css -a reproducible="true" cv.adoc -o index.html
       html-minifier index.html --remove-comments --remove-optional-tags --trimCustomFragments --removeEmptyAttributes --remove-redundant-attributes --remove-script-type-attributes --minify-js true --minify-css true
     '';
 
