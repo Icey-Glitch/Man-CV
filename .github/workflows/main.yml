@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Nix
-      - uses: DeterminateSystems/nix-installer-action@main
+        uses: DeterminateSystems/nix-installer-action@main
         with:
           upstream-cache: https://cache.nixos.org
           nix_conf: experimental-features = nix-command flakes
@@ -23,7 +23,8 @@ jobs:
       - name: Cache Nix store
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - uses: DeterminateSystems/flake-checker-action@main
+      - name: check
+        uses: DeterminateSystems/flake-checker-action@main
 
       - name: Build site
         run: nix build .#pages --print-build-logs
