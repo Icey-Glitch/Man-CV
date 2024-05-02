@@ -59,3 +59,15 @@ a:hover {
 .triplesubtext li{
   list-style: none;
 }
+
+/* Custom bullet point */
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "> ";
+  color: #d79921; /* yellow */
+  font-weight: bold;
+  margin-right: 5px;
+}
