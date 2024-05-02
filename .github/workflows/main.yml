@@ -1,0 +1,50 @@
+on:
+  push:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Nix
+        uses: nixbuild/nix-quick-install-action@v26
+        with:
+          nix_conf: experimental-features = nix-command flakes
+      - name: Build site
+        run: nix build .#pages --print-build-logs
+      - name: Adjust permissions
+        run: |
+          chown -R `id -u`:`id -g` ./result
+          chmod -R a+rwx ./result
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pages
+          path: ./result
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: pages
+          path: ./result
+      - name: Deploy to Cloudflare Pages
+        uses: pickyzz/cf-pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: YOUR_ACCOUNT_ID
+          projectName: YOUR_PROJECT_NAME
+          directory: ./result
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          workingDirectory: my-site
+          wranglerVersion: "3"
+          logsOnFailure: false
