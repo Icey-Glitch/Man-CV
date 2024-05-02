@@ -2,7 +2,6 @@
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/*.tar.gz";
     flake-utils.url = "github:numtide/flake-utils";
-
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
@@ -16,16 +15,6 @@
       system: let
         pkgs = import nixpkgs {
           inherit system;
-        };
-        extensions = nix-vscode-extensions.extensions.${system};
-        inherit (pkgs) vscode-with-extensions vscodium;
-
-        packages.default = vscode-with-extensions.override {
-          vscode = vscodium;
-          vscodeExtensions = [
-            #extensions.open-vsx-release.asciidoctor.asciidoctor-vscode
-            extensions.open-vsx-release.jnoortheen.nix-ide
-          ];
         };
       in rec {
         name = "pages";
@@ -44,7 +33,6 @@
 
             packages = [
               alejandra
-              packages.default
               statix
               nil
               nixd

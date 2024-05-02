@@ -6,10 +6,12 @@ with pkgs;
 
     nativeBuildInputs = [
       asciidoctor
+      html-minifier
     ];
 
     buildPhase = ''
       asciidoctor --attribute reproducible="true" cv.adoc -o index.html
+      html-minifier index.html --remove-comments --remove-optional-tags --trimCustomFragments --removeEmptyAttributes --remove-redundant-attributes --remove-script-type-attributes --minify-js true --minify-css true
     '';
 
     installPhase = ''
