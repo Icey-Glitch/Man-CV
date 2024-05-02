@@ -9,44 +9,62 @@ Julian:: OR
 === Resume
 
 === IT Skills
-**Core Skills:**
-- **System Administration:** Experience with enterprise networking(in practice) and cloud deployment using Cloudflare.
+**Core Skills:** ::
+
+- **System Administration:**  Experience with enterprise networking(in practice) +
+    and cloud deployment using Cloudflare.
 - **Tooling:** Proficient with Nix, K8S, Proxmox, actively learning and contributing.
 - **Software Development:** Proficient in C#, Lua, Python, C++, C99, Rust, NodeJS.
-- **Networking:** Knowledgeable in network architecture, Home network deployment, S2S vpns, On Site hosting, and Packet-Tracer practice.
-- **Security:** Familiar with windows memory forensics, malware analysis and identification, as well as implementing network security policies.
+- **Networking:** Experience with Home/Small office networking, +
+    S2S vpns, On Site hosting, and Packet-Tracer.
+- **Security:** Familiar with windows memory forensics, malware analysis + 
+and identification, as well as implementing network security policies.
 
 **Operating Systems:**
+
 - Linux: Rocky Linux, Debian Bullseye, Nix
 - Microsoft Windows: Windows 7-11
 
-=== Personal Projects & Experience
+---
+=== Personal Projects & Experience 
 
-**Personal Projects:**
-- **System Administration & Security:**
+
+**System Administration & Security:** ::
+
   - Myp project focusing on zero trust architecture.
   - Conducted a mock trial for malware prevention procedures.
   - Wrote a detailed write-up on the procedures to prevent such attacks.
-- **Tooling:**
+  
+**Tooling:** ::
+
   - Actively involved in community projects around a infrastructure as code tool called nix
   - managing personal nix configurations on GitHub. https://github.com/Icey-Glitch/NixDots
   - Contributed to some open-source projects.
-- **Software Development:**
+  
+**Software Development:** ::
+
   - Contributed to a closed-source project for il2cpp CLR interface.
   - Developed and maintained personal website using a variety of technologies.
-- **Networking:**
+  
+**Networking:** ::
+
   - Managing a home network with Opnsense and Tailscale + malware lab and other services.
   - Practiced network troubleshooting using Packet-Tracer.
-- **Security:**
+  
+**Security:** ::
+
   - Conducted research on memory forensics and malware detection techniques.
   - Implemented fail2ban and IDS systems to secure sensitive endpoints.
+  
+---
 
 === Academic Record
 
-**Primary & Middle School:**
+
+**Primary & Middle School:** ::
 - Various achievements including participation in robotics and stock market game.
 
-**High School (2023-24):**
+**High School (2023-24):** ::
 - Java Programming dual credit.
 - Active involvement in Game Dev Club and George Fox CS Competition.
 - Forecasted completion of Systems Design in C++ dual credit.
