@@ -10,9 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Nix
-        uses: nixbuild/nix-quick-install-action@v26
+        uses: DeterminateSystems/nix-installer-action@main
         with:
           nix_conf: experimental-features = nix-command flakes
+      - name: cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Build site
         run: nix build .#pages --print-build-logs
       - name: Adjust permissions
@@ -37,7 +39,7 @@ jobs:
           name: pages
           path: ./result
       - name: Deploy to Cloudflare Pages
-        uses: pickyzz/cf-pages-action@v1
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: YOUR_ACCOUNT_ID
@@ -45,6 +47,5 @@ jobs:
           directory: ./result
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          workingDirectory: my-site
           wranglerVersion: "3"
           logsOnFailure: false
