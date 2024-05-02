@@ -42,8 +42,8 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: YOUR_ACCOUNT_ID
-          projectName: YOUR_PROJECT_NAME
+          accountId: 3597eb148572990301de37d103c9b11a
+          projectName: CoverLetter
           directory: ./result
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
