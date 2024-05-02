@@ -45,7 +45,7 @@ jobs:
           path: ./result
 
       - name: Deploy to Cloudflare Pages
-        uses: grimsteel/fast-cf-pages-upload-action@v1
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 3597eb148572990301de37d103c9b11a
