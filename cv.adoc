@@ -3,10 +3,19 @@
 :iconsdir: ./icons
 :nofooter:
 
-Julian:: OR
+- Julian +
+**location:** OR
 
 [#Resume]
 === Resume
+- **Last built:** {build_time} **UTC**
+
+ifndef::backend-pdf[]
+[pass]
+++++
+<a href="https://cv.sine.zip/cv.pdf">Download as pdf</a>
+++++
+endif::[]
 
 === IT Skills
 **Core Skills:** ::
@@ -40,6 +49,14 @@ and identification, as well as implementing network security policies.
   - Actively involved in community projects around a infrastructure as code tool called nix
   - managing personal nix configurations on GitHub. https://github.com/Icey-Glitch/NixDots
   - Contributed to some open-source projects.
+  - this site https://github.com/Icey-Glitch/Man-CV/ !!!
+
+ifndef::backend-pdf[]
+[pass]  
+++++
+<img src="https://github.com/Icey-Glitch/Man-CV/actions/workflows/main.yml/badge.svg" alt="Italian Trulli">
+++++
+endif::[]
   
 **Software Development:** ::
 
@@ -71,14 +88,14 @@ and identification, as well as implementing network security policies.
 
 === Language Skills
 
-**Fluent:**
-- English
+**Fluent:** English
 
-**Learning:**
-- Spanish
+**Learning:** Spanish
 
 === Personal Interests
 
 - Rock Climbing
 - Biking
 - Orwell's 1984 and Alien
+
+

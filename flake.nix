@@ -2,14 +2,12 @@
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/*.tar.gz";
     flake-utils.url = "github:numtide/flake-utils";
-    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = {
     self,
     nixpkgs,
     flake-utils,
-    nix-vscode-extensions,
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
@@ -23,15 +21,20 @@
         apps.default =
           flake-utils.lib.mkApp
           {
-            drv = pkgs.writeShellScriptBin "pages" "${pkgs.python3}/bin/python3 -m http.server 8000 -d ${packages.pages}";
+            drv = pkgs.writeShellScriptBin "pages" "nix build .#pages; busybox httpd -p 8000 -h ./result/";
           };
+        apps.reload =
+          flake-utils.lib.mkApp
+          {
+            drv = pkgs.writeShellScriptBin "pagesreload" "busybox pkill -f httpd; nix run .#default";
+          };
+          formatter = pkgs.alejandra;
 
         devShells = with pkgs; {
           default = mkShell {
-            name = "dev";
-            # 👇 we can just use `rustToolchain` here:
-
+            name = "CV";
             packages = [
+              busybox #for webserver
               alejandra
               statix
               nil

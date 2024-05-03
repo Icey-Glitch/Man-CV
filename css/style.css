@@ -42,7 +42,10 @@ h1 {
   margin-bottom: 0px;
 }
 
-a, a.active, a.visited, a.hover {
+a,
+a.active,
+a.visited,
+a.hover {
   color: #8ec07c; /* green */
   text-decoration: none; /* remove underline */
 }
@@ -56,7 +59,7 @@ a:hover {
   color: #a89984; /* faded yellow */
 }
 
-.triplesubtext li{
+.triplesubtext li {
   list-style: none;
 }
 
@@ -65,9 +68,13 @@ ul {
   list-style-type: none;
 }
 
-ul li::before {
+ul li::marker {
   content: "> ";
   color: #d79921; /* yellow */
   font-weight: bold;
   margin-right: 5px;
+  list-style-position: inside;
+  border-radius: 1ch;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
 }
