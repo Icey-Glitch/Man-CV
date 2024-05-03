@@ -46,8 +46,9 @@ a,
 a.active,
 a.visited,
 a.hover {
-  color: #8ec07c; /* green */
+  color: #8aadf4; /* blue */
   text-decoration: none; /* remove underline */
+  font-weight: bold;
 }
 
 a:hover {
