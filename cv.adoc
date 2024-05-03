@@ -20,7 +20,7 @@ endif::[]
 === IT Skills
 **Core Skills:** ::
 
-- **System Administration:**  Experience with enterprise networking(in practice) +
+- **System Administration:**  practical experience with enterprise networking concepts at a small scale +
     and cloud deployment using Cloudflare.
 - **Tooling:** Proficient with Nix, K8S, Proxmox, actively learning and contributing.
 - **Software Development:** Proficient in C#, Lua, Python, C++, C99, Rust, NodeJS.
@@ -40,15 +40,18 @@ and identification, as well as implementing network security policies.
 
 **System Administration & Security:** ::
 
-  - Myp project focusing on zero trust architecture.
-  - Conducted a mock trial for malware prevention procedures.
-  - Wrote a detailed write-up on the procedures to prevent such attacks.
+  - IB: Middle Years Program, project focusing on learning comptia Net+ equivelent skills along with zero trust architecture.
+  - Conducting isolated network trials of malware samples to develop malware prevention procedures.
+  ** Aswell as documenting for reproduction and steps taken before and after to gather data.
   
 **Tooling:** ::
 
   - Actively involved in community projects around a infrastructure as code tool called nix
   - managing personal nix configurations on GitHub. https://github.com/Icey-Glitch/NixDots
   - Contributed to some open-source projects.
+  ** https://github.com/fufexan/dotfiles/pull/34
+  ** https://github.com/ScoopInstaller/Extras/pull/12758
+  ** https://github.com/Alxs009/Universal-Math-Fixer/pull/2
   - this site https://github.com/Icey-Glitch/Man-CV/ !!!
 
 ifndef::backend-pdf[]
@@ -60,8 +63,9 @@ endif::[]
   
 **Software Development:** ::
 
-  - Contributed to a closed-source project for il2cpp CLR interface.
-  - Developed and maintained personal website using a variety of technologies.
+  - Contributed to a closed-source game modding project for Unity games using a C# to native compiler called IL2cpp.
+  - Developed and maintain personal websites along with building tools to automate tasks + 
+  pulling data from noaa using rust and logging in a json. Developing 3rd party addons to games for me and friends.
   
 **Networking:** ::
 
