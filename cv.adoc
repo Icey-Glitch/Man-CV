@@ -36,6 +36,16 @@ and identification, as well as implementing network security policies.
 - Microsoft Windows: Windows 7-11
 
 ---
+=== General Skills
+**Software:** ::
+- **Google sheets:**
+** XML data import and other advanced functions.
+- **Powerpoint**
+- **Word**
+- **Excel:**
+** VB scripting
+
+---
 === Personal Projects & Experience 
 
 
@@ -49,11 +59,12 @@ and identification, as well as implementing network security policies.
 
   - Actively involved in community projects around a infrastructure as code tool called nix
   - managing personal nix configurations on GitHub. https://github.com/Icey-Glitch/NixDots
-  - Contributed to some open-source projects.
-  ** https://github.com/fufexan/dotfiles/pull/34
-  ** https://github.com/ScoopInstaller/Extras/pull/12758
-  ** https://github.com/Alxs009/Universal-Math-Fixer/pull/2
-  - this site https://github.com/Icey-Glitch/Man-CV/ !!!
+  - Contributed to some open-source projects. +
+  **GitHub PRs:**
+  ** https://github.com/fufexan/dotfiles/pull/34[FufexanDotfiles]
+  ** https://github.com/ScoopInstaller/Extras/pull/12758[ScoopInstaller]
+  ** https://github.com/Alxs009/Universal-Math-Fixer/pull/2[Universal-Math-Fixer]
+  - This site https://github.com/Icey-Glitch/Man-CV/ !!!
 
 ifndef::backend-pdf[]
 [pass]  
@@ -103,4 +114,13 @@ endif::[]
 - Biking
 - Orwell's 1984 and Alien
 
+---
 
+ifndef::backend-pdf[]
+[pass]  
+++++
+<center>
+  <p>This site is freely available under the <strong>BSD-3</strong> clause <a href="https://github.com/Icey-Glitch/Man-CV/">[Source]</a>.</p>
+</center>
+++++
+endif::[]
