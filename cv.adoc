@@ -2,6 +2,7 @@
 :imagesdir: ./images
 :iconsdir: ./icons
 :nofooter:
+:hide-uri-scheme: 
 
 - Julian +
 **location:** OR
