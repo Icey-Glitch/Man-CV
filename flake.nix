@@ -17,6 +17,7 @@
       in rec {
         name = "pages";
         packages.pages = import ./default.nix {pkgs = pkgs;};
+        packages.unipdf = import ./unipdf.nix {pkgs = pkgs;};
         packages.default = packages.pages;
         apps.default =
           flake-utils.lib.mkApp
@@ -28,12 +29,13 @@
           {
             drv = pkgs.writeShellScriptBin "pagesreload" "busybox pkill -f httpd; nix run .#default";
           };
-          formatter = pkgs.alejandra;
+        formatter = pkgs.alejandra;
 
         devShells = with pkgs; {
           default = mkShell {
             name = "CV";
             packages = [
+              packages.unipdf
               busybox #for webserver
               alejandra
               statix
