@@ -22,9 +22,9 @@ endif::[]
 
 === Contact
 
-- **[LinkedIn](https://www.linkedin.com/in/running-toast)**  
-- **[GitHub](https://github.com/Icey-Glitch)**  
-- **[Email](mailto:jalex@riseup.net)**  
+- link:https://www.linkedin.com/in/running-toast[LinkedIn]
+- link:https://github.com/Icey-Glitch[GitHub]
+- mailto:jalex@riseup.net[Email]
 
 === IT Skills
 **Core Skills:** ::
