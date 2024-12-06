@@ -20,8 +20,6 @@ endif::[]
 
 === Contact
 
-=== Contact
-
 - link:https://www.linkedin.com/in/running-toast[LinkedIn]
 - link:https://github.com/Icey-Glitch[GitHub]
 - mailto:jalex@riseup.net[Email]
