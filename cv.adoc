@@ -28,7 +28,7 @@ endif::[]
 **Core Skills:** ::
 
 - **System Administration:**  practical experience with enterprise networking concepts at a small scale +
-    and cloud deployment using Cloudflare.
+    and cloud deployment using Cloudflare. configuration of AD instancases and resource provisioning. KRB5
 - **Tooling:** Proficient with Nix, K8S, Proxmox, actively learning and contributing.
 - **Software Development:** Proficient in C#, GO, Lua, Python, C++, C99, Rust, NodeJS.
 - **Networking:** Experience with Home/Small office networking, +
@@ -95,6 +95,7 @@ endif::[]
 
   - Conducted research on memory forensics and malware detection techniques.
   - Implemented fail2ban and IDS systems to secure sensitive endpoints.
+  - AD / kerberos auth configuration exploitation, and priv upgrading
   
 ---
 
@@ -132,3 +133,4 @@ ifndef::backend-pdf[]
 </center>
 ++++
 endif::[]
+
