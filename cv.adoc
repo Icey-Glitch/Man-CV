@@ -102,7 +102,7 @@ endif::[]
 === Academic Record
 **EHCS (2024-25):** ::
 - Starting winter term 25
-- PCC 162 (c++ year 2)
+- CPP level 2 at PCC
 
 **High School (2024-25):** ::
 - Pcc 161B dual credit (c++ year 1)
